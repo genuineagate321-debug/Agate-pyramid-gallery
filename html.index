@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agate Pyramid Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: #2c3e50;
+            color: #fff;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agate Pyramid Gallery</h1>
+        <p>Explore our collection of natural agate pyramids</p>
+    </header>
+
+    <main class="gallery">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Agate Pyramid 1">
+            <div class="card-content">
+                <h2 class="card-title">Band Agate Pyramid</h2>
+                <p>Beautiful natural banded pattern with rich earthy tones.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Agate Pyramid 2">
+            <div class="card-content">
+                <h2 class="card-title">Moss Agate Pyramid</h2>
+                <p>Featuring deep green inclusions resembling natural moss.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Agate Pyramid 3">
+            <div class="card-content">
+                <h2 class="card-title">Fire Agate Pyramid</h2>
+                <p>Vibrant flashes of orange and red translucent layers.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agate Pyramid Gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
