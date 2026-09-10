@@ -1,0 +1,91 @@
+/* General Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2c3e50, #4a6572);
+    color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Component */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+}
